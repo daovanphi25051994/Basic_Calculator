@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculater basic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <input type="text" id="result" name="result" value="">
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td><input type="button" value="1" id="num1" onclick="getValue(id)"></td>
+                    <td><input type="button" value="2" id="num2" onclick="getValue(id)"></td>
+                    <td><input type="button" value="3" id="num3" onclick="getValue(id)"></td>
+                    <td><input type="button" value="+" id="plus" onclick="getSymbol(id)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" id="num4" onclick="getValue(id)"></td>
+                    <td><input type="button" value="5" id="num5" onclick="getValue(id)"></td>
+                    <td><input type="button" value="6" id="num6" onclick="getValue(id)"></td>
+                    <td><input type="button" value="-" id="minus" onclick="getSymbol(id)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" id="num7" onclick="getValue(id)"></td>
+                    <td><input type="button" value="8" id="num8" onclick="getValue(id)"></td>
+                    <td><input type="button" value="9" id="num9" onclick="getValue(id)"></td>
+                    <td><button id="multi" value="*" onclick="getSymbol(id)">x</button></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" id="delete" onclick="deleteResult()"></td>
+                    <td><input type="button" value="0" id="num0" onclick="getValue(id)"></td>
+                    <td><input type="button" value="=" id="equal" onclick="showResult()"></td>
+                    <td><input type="button" value="/" id="division" onclick="getSymbol(id)"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
